@@ -1,22 +1,20 @@
-<ion-view view-title="Dashboard" name="dashboard-view">
+<ion-view view-title="Home" name="dashboard-view">
   <ion-nav-buttons side="right">
     <button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
   </ion-nav-buttons>
  
   <ion-content class="padding">
     <div class="row"><div class="col text-center">
-      <h3 class="title">Bem vindo {{username}}!</h3>
+      <h3 class="title">Bem vindo(a) {{username}}!</h3>
       Esta é sua pagina inicial.
       <br><br><br>
-      <button class="button button-full button-positive" ng-click="performValidRequest()">
+      <button class="button button-full button-dark" ng-click="performValidRequest()">
         Marque sua Aula
       </button>
-      <button class="button button-full button-energized" ng-click="performUnauthorizedRequest()">
-        Make Request for unauthorized resource
+      <button class="button button-full button-dark" ng-click="performValidRequest()">
+        Anotações Pessoais
       </button>
-      <button class="button button-full button-assertive" ng-click="performInvalidRequest()">
-        Make Request without valid token
-      </button>
+
       <br><br>
       {{response}}
     </div></div>
